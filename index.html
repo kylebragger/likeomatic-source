@@ -1,0 +1,39 @@
+<html>
+<body>
+    
+    
+
+    <script type="text/javascript" charset="utf-8">
+        fb_like = function(){
+            try {
+                var url = encodeURIComponent(location.href);
+                var ifr = document.createElement('iframe');
+                ifr.style.width  = 450 + 'px';
+                ifr.style.height = 100 + 'px';
+                ifr.style.border = 'none';
+                ifr.src = 'http://www.facebook.com/plugins/like.php?href=' + url + '&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light';
+                ifr.scrolling   = 'no';
+                ifr.frameborder = 0;
+                document.getElementsByTagName('body')[0].appendChild(ifr);
+            } catch (e) {
+                // o_O
+            }
+            return false;
+        }
+        
+        /*
+        
+        fb_like=function(){try{var url=encodeURIComponent(location.href);var ifr=document.createElement('iframe');ifr.style.width=450+'px';ifr.style.height=100+'px';ifr.style.border='none';ifr.src='http://www.facebook.com/plugins/like.php?href='+url+'&show_faces=true&width=450&action=like&colorscheme=light';ifr.scrolling='no';ifr.frameborder=0;document.getElementsByTagName('body')[0].appendChild(ifr);}catch(e){}return false;}
+         
+         */
+
+        //fb_like();
+
+        /*
+        var fblikefn=function(){var url = encodeURIComponent(location.href);alert(url);document.write('<iframe src="http://www.facebook.com/plugins/like.php?href=' + url + '&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none;overflow:hidden;width:450px;"></iframe>');return false;}
+        */
+    </script>
+
+    <a href="javascript:(function(){try{var url=encodeURIComponent(location.href);var ifr=document.createElement('iframe');ifr.style.width=450+'px';ifr.style.height=100+'px';ifr.style.border='none';ifr.src='http://www.facebook.com/plugins/like.php?href='+url+'&show_faces=true&width=450&action=like&colorscheme=light';ifr.scrolling='no';ifr.frameborder=0;document.getElementsByTagName('body')[0].appendChild(ifr);}catch(e){}})();">Like-o-matic</a>
+    
+</body></html>

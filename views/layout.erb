@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Like-o-matic, a totally random thing by Kyle Bragger</title>
+    
+    <style type="text/css" media="all">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            text-align: center;
+            background: #fff;
+            color: #1a1a1a;
+            font: normal normal 16px/24px "Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+        a {
+            color: #09b986;
+            font-weight: bold;
+            outline: none;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #08986f;
+        }
+        #wrap {
+            padding: 20px;
+            width: 575px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        h1,h2,h3,h4,h6 {
+            font-weight: normal;
+            margin-bottom: 1em;
+        }
+        h1 {
+            font-weight: bold;
+        }
+        h2 a {
+            font-weight: normal;
+            color: #333;
+        }
+        h2 a:hover {
+            color: #555;
+        }
+        h3 {
+            margin-bottom: 0.25em;
+        }
+        h4 {
+            font: italic 13px/1 Georgia,Century,Times,serif;
+            color: #555;
+        }
+        p {
+            margin: 15px 0 15px 10px;
+        }
+        p a {
+            background: #f9f6f3;
+            padding: 5px 10px;
+            border-radius: 40px;
+            -moz-border-radius: 40px;
+            -webkit-border-radius: 40px;
+        }
+        code {
+            font-size: 13px;
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+<div id="wrap">
+    <h1>Like-o-matic</h1>
+    <h2>Like-o-matic is a bookmarklet designed to let you Facebook &quot;Like&quot; quite literally any website you&#8217;re currently looking at. No longer will <a target="blank" href="http://www.readwriteweb.com/archives/how_to_trick_users_into_liking_facebook_pages_theyre_not_on.php">being tricked into liking a different page than you&#8217;re presently on</a> be a concern.</h2>
+    
+    <h3>Get the bookmarklet</h3>
+    <h4>Just drag this link to your bookmarks or favorites toolbar.</h4>
+    <p><a href="javascript:(function(){try{var url=encodeURIComponent(location.href);var ifr=document.createElement('iframe');ifr.style.position='absolute';ifr.style.top=10+'px';ifr.style.left=10+'px';ifr.style.width=450+'px';ifr.style.height=100+'px';ifr.style.border='none';ifr.src='http://www.facebook.com/plugins/like.php?href='+url+'&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light';ifr.scrolling='no';ifr.frameborder=0;document.getElementsByTagName('body')[0].appendChild(ifr);var ifr=document.createElement('iframe');ifr.style.position='absolute';ifr.style.top=125+'px';ifr.style.left=10+'px';ifr.style.width=450+'px';ifr.style.height=100+'px';ifr.style.border='none';ifr.src='http://likeomatic.heroku.com/i';ifr.scrolling='no';ifr.frameborder=0;document.getElementsByTagName('body')[0].appendChild(ifr);}catch(e){}})();">Like-o-matic</a></p>
+    
+    <h3>Likes API</h3>
+    <h4>A simple JSON API that shows how many likes any URL has on Facebook</h4>
+    <code>http://likeomatic.heroku.com/likes?url=http://your-url-goes-here.com</code>
+    
+    <h6>Made by <a href="http://twitter.com/kylebragger">Kyle Bragger</a>. He also makes <a href="http://forrst.com/">Forrst</a>.</h6>
+</div>
+
+<script src="http://static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">clicky.init(202264);</script>
+
+</body>
+</html>

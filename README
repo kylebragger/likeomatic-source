@@ -1,0 +1,14 @@
+Source for likeomatic.heroku.com
+
+Requirements
+- mongo
+- ruby host that supports rack and sinatra (cough... heroku)
+
+Code is released under a pretty basic license: do whatever you want with this but please credit Kyle Bragger (kyle@kylebragger.com). Also, I'm not able to support this code (that's not to say I will be a dick about answering your question)
+
+Enjoy.
+
+-Kyle Bragger
+June 1, 2010
+
+
